@@ -1,0 +1,23 @@
+.jumbotron {
+  background-image: url(change me);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #EEE;
+}
+.jumbotron .container {
+  height: 350px;
+}
+
+#jumbo {
+  text-decoration: none;
+}
+
+.inline-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 12px;
+}
+
+.hidden {
+  display: none;
+}
