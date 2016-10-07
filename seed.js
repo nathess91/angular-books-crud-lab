@@ -25,7 +25,7 @@ bookList.push({
 bookList.push({
   title: 'Dracula',
   author: 'Bram Stoker',
-  releaseDate: ''
+  releaseDate: '1897'
 });
 bookList.push({
   title: 'American Psycho',
