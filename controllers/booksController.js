@@ -42,6 +42,7 @@ function update(req, res) {
     foundBook.author = req.body.author;
     foundBook.title = req.body.title;
     foundBook.releaseDate = req.body.releaseDate;
+    foundBook.image = req.body.image;
     foundBook.save(function(err, savedBook) {
       if(err) { console.log('saving altered book failed'); }
       res.json(savedBook);

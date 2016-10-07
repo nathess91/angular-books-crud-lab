@@ -10,7 +10,8 @@ function BooksIndexController($http) {
   vm.newBook = {
     title: '',
     author: '',
-    releaseDate: ''
+    releaseDate: '',
+    image = ''
   };
 
   // GET ALL BOOKS
@@ -53,7 +54,7 @@ function BooksIndexController($http) {
   vm.deleteBook = function(book) {
     $http({
       method: 'DELETE',
-      url: '/api/books/' + album._id
+      url: '/api/books/' + book._id
     }).then(function successCallback(json) {
       var index = vm.books.indexOf(book);
       vm.books.splice(index, 1);
@@ -61,5 +62,5 @@ function BooksIndexController($http) {
       console.log('There was an error deleting the data', response);
     });
   }
-  
+
 }
