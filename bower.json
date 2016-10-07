@@ -1,0 +1,14 @@
+{
+  "name": "angular-books-crud-lab",
+  "description": "<!-- Location: SF -->",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/nathess91/angular-books-crud-lab",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
