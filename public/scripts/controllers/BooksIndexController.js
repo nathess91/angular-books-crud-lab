@@ -40,7 +40,7 @@ function BooksIndexController($http) {
   vm.editBook = function(book) {
     $http({
       method: 'PUT',
-      url: '/api/books' + book._id,
+      url: '/api/books/' + book._id,
       data: book
     }).then(function successCallback(json) {
 
@@ -49,4 +49,17 @@ function BooksIndexController($http) {
     });
   }
 
+  // DELETE A BOOK
+  vm.deleteBook = function(book) {
+    $http({
+      method: 'DELETE',
+      url: '/api/books/' + album._id
+    }).then(function successCallback(json) {
+      var index = vm.books.indexOf(book);
+      vm.books.splice(index, 1);
+    }, function errorCallback(response) {
+      console.log('There was an error deleting the data', response);
+    });
+  }
+  
 }
