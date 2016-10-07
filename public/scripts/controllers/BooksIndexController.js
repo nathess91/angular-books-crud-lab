@@ -33,7 +33,20 @@ function BooksIndexController($http) {
       vm.books.push(response.data);
     }, function errorCallback(response) {
       console.log('There was an error posting the data', response);
-    })
+    });
+  }
+
+  // EDIT A BOOK
+  vm.editBook = function(book) {
+    $http({
+      method: 'PUT',
+      url: '/api/books' + book._id,
+      data: book
+    }).then(function successCallback(json) {
+
+    }, function errorCallback(response) {
+      console.log('There was an error editing the data', response);
+    });
   }
 
 }
