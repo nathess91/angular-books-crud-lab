@@ -11,7 +11,7 @@ function BooksIndexController($http) {
     title: '',
     author: '',
     releaseDate: '',
-    image = ''
+    image: ''
   };
 
   // GET ALL BOOKS
