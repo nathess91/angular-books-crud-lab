@@ -42,9 +42,9 @@
 
           <!-- Button -->
           <div class="form-group">
-            <label class="col-md-4 control-label">Save Book</label>
+            <label class="col-md-4 control-label"></label>
             <div class="col-md-4">
-              <button class="btn btn-primary">Submit</button>
+              <button id="add" class="btn btn-primary">Add Book to Library</button>
             </div>
           </div>
         </fieldset>
@@ -53,7 +53,7 @@
   </div>
 
 
-  <input type="text" class="form-control" ng-model="searchText" placeholder="Search Libaray">
+  <input id="search-bar" type="text" class="form-control" ng-model="searchText" placeholder="Search Library">
   <div ng-repeat="book in booksIndexCtrl.books | orderBy: 'author' | filter: searchText" class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
@@ -62,6 +62,7 @@
           <div class='row'>
             <div class="col-md-3 col-xs-12 thumbnail">
               <img src={{book.image}} alt="book image">
+              <input ng-show="editing" ng-model="book.image" type="text" class="form-control input-md">
             </div>
 
             <div class="col-md-9 col-xs-12">
