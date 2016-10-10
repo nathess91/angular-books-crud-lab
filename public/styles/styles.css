@@ -1,11 +1,27 @@
+body {
+  background-color: black;
+}
+
+#search-bar {
+  width: 780px;
+  margin-bottom: 15px;
+  margin-left: 80px;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-shadow: 1px 1px 2px black;
+}
+
 .jumbotron {
-  background-image: url(change me);
+  background-image: url('https://assets.entrepreneur.com/content/16x9/822/20150903173413-books-shop-fair-library-used-bookshelf-literature-study-textbooks.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   color: #EEE;
 }
 .jumbotron .container {
   height: 350px;
+  text-shadow: 1px 1px 2px black;
 }
 
 #jumbo {
@@ -20,4 +36,13 @@
 
 .hidden {
   display: none;
+}
+
+#add {
+  background-color: #4DBF48;
+  border: none;
+}
+
+#add:hover{
+  background-color: #337F30;
 }
